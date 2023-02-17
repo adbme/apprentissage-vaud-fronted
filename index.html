@@ -13,12 +13,46 @@
 
 <body>
     <header>
-        <h1>Job Get JG</h1>
+        <a href="/index.html"><img style="height: 40px; margin-left: 30px;" class="logo" src="/images/planet-earth.png"
+                alt=""> </a>
+        <h1 class="logo"> Job Get JG
+        </h1>
+
+
+
+
+
     </header>
     <main>
+
+
         <div class="container1">
             <!-- div1 -->
             <div class="div1 div">
+                <div class="sousDiv1 sousDiv">
+                    <b>Développer informaticien chez: <b>Vide</b></b>
+                </div>
+
+                <div class="sousDiv2 sousDiv">
+                    <p>Publié le :</p>
+                    <p>Localité :</p>
+                    <p>Langue :</p>
+                    <p>Année :</p>
+                    <p>Places restantes</p>
+                </div>
+
+                <div class="sousDiv3 sousDiv">
+                    <p>vide :</p>
+                    <p>vide :</p>
+                    <p>vide :</p>
+                    <p>vide :</p>
+                    <p>vide</p>
+                </div>
+            </div>
+
+
+            <!-- div2 -->
+            <div class="div2 div">
                 <div class="sousDiv1 sousDiv">
                     <b>Développer informaticien chez: <b>jobtrek</b></b>
 
@@ -33,24 +67,130 @@
                 </div>
 
                 <div class="sousDiv3 sousDiv">
+                    <p>vide :</p>
+                    <p>vide :</p>
+                    <p>vide :</p>
+                    <p>vide :</p>
+                    <p>vide</p>
+                </div>
+            </div>
+
+            <!-- div3 -->
+
+            <div class="div3 div">
+                <div class="sousDiv1 sousDiv">
+                    <b>Développer informaticien chez: <b>jobtrek</b></b>
+
+                </div>
+
+                <div class="sousDiv2 sousDiv">
                     <p>Publié le :</p>
                     <p>Localité :</p>
                     <p>Langue :</p>
                     <p>Année :</p>
                     <p>Places restantes</p>
                 </div>
+
+                <div class="sousDiv3 sousDiv">
+                    <p>vide :</p>
+                    <p>vide :</p>
+                    <p>vide :</p>
+                    <p>vide :</p>
+                    <p>vide</p>
+                </div>
             </div>
 
-
-            <!-- div2 -->
-            <div class="div2 div"></div>
-            <!-- div3 -->
-            <div class="div3 div"></div>
         </div>
 
-        <div class="container2"></div>
+        <div class="container2">
+            <!-- container2 div1 -->
+            <form action="" id="myForm">
+                <div class="c2Div1 div">
+                    <!-- sousDiv1C2 -->
+                    <div class="sousDiv1C2">
+                        <h1>Votre recherche :</h1>
+                    </div>
+                    <!-- sousDiv2C2 -->
+                    <div class="sousDiv2C2 sousDivC2T">
+
+                        <input type="checkbox" class="checkbox required">
+
+                        <div class="labelDate"><label class="label">Date</label>
+                            <input class="inputLabel" type="date">
+                        </div>
+
+                    </div>
+                    <!-- sousDiv3C3 -->
+                    <div class="sousDiv3C2 sousDivC2T"> <input type="checkbox" class="checkbox required">
+
+                        <div class="labelDate"><label class="label">Localité</label>
+                            <input class="inputLabel inputLabel2" placeholder="entrez une localité" type="text">
+                        </div>
+
+                    </div>
+
+                    <!-- sousDiv4C3 -->
+                    <div class="sousDiv4C2 sousDivC2T">
+                        <input type="checkbox" class="checkbox required">
+
+                        <div class="labelDate"><label class="label">Langue :</label>
+                            <select class="inputLabel inputLabel3">
+                                <option value="francais">Français</option>
+                                <option value="anglais">Anglais</option>
+                                <option value="allemand">Allemand</option>
+                                <option value="romanche">Romanche</option>
+                            </select>
+                        </div>
+
+
+
+
+                    </div><!-- sousDiv5C3 -->
+
+                    <div class="submitDiv"> <button type="submit" class="buttonSubmit">submit</button>
+                    </div>
+            </form>
+
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
     </main>
     <footer></footer>
 </body>
+<script>
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Récupérer le formulaire
+        var form = document.getElementById('myForm');
+
+        // Empecfe soumision form quand submit
+        form.addEventListener('submit', function (e) {
+            // Vérifier si toutes les cases à cocher requises sont cochées
+            var checkboxes = document.querySelectorAll('.required');
+            var allChecked = true;
+            checkboxes.forEach(function (checkbox) {
+                if (!checkbox.checked) {
+                    allChecked = false;
+                }
+            });
+
+            // Si toutes les cases à cocher sont cochées, permettre la soumission du formulaire
+            if (!allChecked) {
+                e.preventDefault();
+                alert('rempli toutes les cases et cocher quand quand c bon');
+            }
+        });
+    });
+
+
+</script>
+
+
 
 </html>
