@@ -1,5 +1,3 @@
-Voici le code Python expliqué en utilisant une hiérarchie markdown :
-
 Code Python pour extraire des informations sur les apprentissages disponibles en Suisse
 =======================================================================================
 
