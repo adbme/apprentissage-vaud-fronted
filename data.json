@@ -1,0 +1,26 @@
+[
+    {
+        "apprentissage": [
+            {
+                "company": "EPFL - Formation Apprentis",
+                "locality": "Lausanne",
+                "language": "FR",
+                "year": "2023",
+                "places": "1",
+                "lastUpdate": "06.02.23",
+                "origin": "orientation.ch",
+                "originID": "1867571"
+            },
+            {
+                "company": "Fondation Jobtrek",
+                "locality": "Lausanne",
+                "language": "FR",
+                "year": "2023",
+                "places": "2",
+                "lastUpdate": "12.12.22",
+                "origin": "orientation.ch",
+                "originID": "2078314"
+            }
+        ]
+    }
+]
