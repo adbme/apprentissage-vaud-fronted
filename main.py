@@ -1,3 +1,5 @@
+import json
+
 import requests
 from lxml import etree
 
@@ -33,3 +35,5 @@ for div in resultbox:
         'origin': origin
     }
     print(apprenticeship)
+    json_data = json.dumps(apprenticeship)
+
